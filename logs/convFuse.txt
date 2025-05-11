@@ -1,0 +1,156 @@
+------------------------ Args -------------------------
+dataset: prcc
+dataset_root: /content/drive/Othercomputers/MacBook Pro'm/CSSC-CCReID-main/data/
+dataset_filename: prcc
+height: 384
+width: 192
+horizontal_flip_pro: 0.5
+pad_size: 10
+random_erasing_pro: 0.5
+split_id: 0
+train_batch: 32
+test_batch: 128
+num_workers: 8
+num_instances: 8
+start_epoch: 0
+max_epoch: 120
+margin: 0.3
+lr: 0.0003
+warm_up_factor: 0.1
+warm_up_method: linear
+warm_up_epochs: 10
+step_milestones: [30, 60]
+gamma: 0.1
+weight_decay: 0.0005
+weight_decay_bias: 0.0005
+resume: 
+use_cpu: False
+gpu_devices: 0
+seed: 666
+evaluate: False
+print_train_info_epoch_freq: 5
+start_eval_epoch: 0
+eval_epoch: 5
+reranking: False
+save_dir: /content/drive/MyDrive/logs/ConvFusion
+save_checkpoint: True
+tri_start_epoch: 35
+--------------------- Args End ------------------------
+Currently using GPU 0
+Initializing dataset prcc
+=> PRCC loaded
+Dataset statistics:
+  --------------------------------------------
+  subset      | # ids | # images | # clothes
+  --------------------------------------------
+  train       |   150 |    17896 |       300
+  val         |   150 |     3347 |       200
+  query(same) |    71 |     3873 |
+  query(diff) |    71 |     3543 |
+  gallery     |    71 |     3384 |
+  --------------------------------------------
+  total       |   221 |    32043 |       442
+  --------------------------------------------
+resnetV1 weights are uses
+==> Start training
+Ep5 Id:1.1919 Tri:0.0000 
+==> Test
+Epoch 5: mAP: 95.6753%  R-1 : 99.9484%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 5: mAP: 31.2888%  R-1 : 32.3737%  R-5 : 39.4581%  R-10: 42.2806%  
+Ep10 Id:1.0564 Tri:0.0000 
+==> Test
+Epoch 10: mAP: 95.8761%  R-1 : 99.7418%  R-5 : 99.8709%  R-10: 99.9225%  
+Epoch 10: mAP: 41.8851%  R-1 : 48.4053%  R-5 : 55.2639%  R-10: 58.5944%  
+Ep15 Id:0.9733 Tri:0.0000 
+==> Test
+Epoch 15: mAP: 94.7982%  R-1 : 99.8709%  R-5 : 99.8967%  R-10: 99.9484%  
+Epoch 15: mAP: 40.9618%  R-1 : 46.2885%  R-5 : 51.9052%  R-10: 54.8970%  
+Ep20 Id:0.9444 Tri:0.0000 
+==> Test
+Epoch 20: mAP: 94.0007%  R-1 : 99.9484%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 20: mAP: 45.7109%  R-1 : 49.4778%  R-5 : 55.4897%  R-10: 59.6669%  
+Ep25 Id:0.9303 Tri:0.0000 
+==> Test
+Epoch 25: mAP: 95.5424%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 25: mAP: 44.5280%  R-1 : 47.3045%  R-5 : 52.6955%  R-10: 55.9695%  
+Ep30 Id:0.9147 Tri:0.0000 
+==> Test
+Epoch 30: mAP: 94.3882%  R-1 : 99.8967%  R-5 : 99.9742%  R-10: 99.9742%  
+Epoch 30: mAP: 48.5787%  R-1 : 52.6955%  R-5 : 58.1428%  R-10: 61.3887%  
+Ep35 Id:0.8597 Tri:0.0000 
+==> Test
+Epoch 35: mAP: 96.7625%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 35: mAP: 50.5775%  R-1 : 55.0381%  R-5 : 60.3443%  R-10: 62.6305%  
+Ep40 Id:0.8608 Tri:0.0027 
+==> Test
+Epoch 40: mAP: 98.8226%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 40: mAP: 55.4797%  R-1 : 57.3808%  R-5 : 62.1789%  R-10: 64.2393%  
+Ep45 Id:0.8556 Tri:0.0019 
+==> Test
+Epoch 45: mAP: 99.1653%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 45: mAP: 56.9070%  R-1 : 56.3647%  R-5 : 63.8160%  R-10: 67.3158%  
+Ep50 Id:0.8534 Tri:0.0017 
+==> Test
+Epoch 50: mAP: 99.0550%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 50: mAP: 58.1027%  R-1 : 59.6669%  R-5 : 65.1425%  R-10: 67.3723%  
+Ep55 Id:0.8487 Tri:0.0012 
+==> Test
+Epoch 55: mAP: 98.8322%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 55: mAP: 59.0419%  R-1 : 61.0217%  R-5 : 65.3119%  R-10: 67.3158%  
+Ep60 Id:0.8471 Tri:0.0009 
+==> Test
+Epoch 60: mAP: 98.9263%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 60: mAP: 59.2331%  R-1 : 60.5701%  R-5 : 65.3966%  R-10: 68.6424%  
+Ep65 Id:0.8426 Tri:0.0006 
+==> Test
+Epoch 65: mAP: 99.0492%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 65: mAP: 59.2830%  R-1 : 60.5701%  R-5 : 65.8764%  R-10: 68.9811%  
+Ep70 Id:0.8411 Tri:0.0004 
+==> Test
+Epoch 70: mAP: 99.0545%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 70: mAP: 59.0836%  R-1 : 60.7677%  R-5 : 65.8482%  R-10: 68.9529%  
+Ep75 Id:0.8415 Tri:0.0006 
+==> Test
+Epoch 75: mAP: 99.1133%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 75: mAP: 60.5997%  R-1 : 61.5862%  R-5 : 66.6102%  R-10: 70.0254%  
+Ep80 Id:0.8407 Tri:0.0006 
+==> Test
+Epoch 80: mAP: 99.1131%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 80: mAP: 60.2461%  R-1 : 63.0539%  R-5 : 67.2312%  R-10: 69.3480%  
+Ep85 Id:0.8411 Tri:0.0005 
+==> Test
+Epoch 85: mAP: 99.1660%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 85: mAP: 60.0469%  R-1 : 61.3887%  R-5 : 67.1747%  R-10: 69.4045%  
+Ep90 Id:0.8396 Tri:0.0005 
+==> Test
+Epoch 90: mAP: 99.0856%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 90: mAP: 59.7425%  R-1 : 61.6145%  R-5 : 67.2312%  R-10: 69.6303%  
+Ep95 Id:0.8392 Tri:0.0004 
+==> Test
+Epoch 95: mAP: 99.0965%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 95: mAP: 61.1230%  R-1 : 62.3483%  R-5 : 67.9085%  R-10: 70.1948%  
+Ep100 Id:0.8388 Tri:0.0005 
+==> Test
+Epoch 100: mAP: 99.1005%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 100: mAP: 60.4473%  R-1 : 61.3604%  R-5 : 67.4570%  R-10: 70.5617%  
+Ep105 Id:0.8384 Tri:0.0005 
+==> Test
+Epoch 105: mAP: 99.0646%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 105: mAP: 60.2266%  R-1 : 61.2758%  R-5 : 66.6949%  R-10: 69.0940%  
+Ep110 Id:0.8387 Tri:0.0005 
+==> Test	
+Epoch 110: mAP: 99.1249%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 110: mAP: 60.3195%  R-1 : 61.9249%  R-5 : 67.5416%  R-10: 70.2512%  
+Ep115 Id:0.8376 Tri:0.0005 
+==> Test
+Epoch 115: mAP: 99.1023%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 115: mAP: 61.6293%  R-1 : 64.2676%  R-5 : 69.4609%  R-10: 71.3520%  
+Ep120 Id:0.8377 Tri:0.0003 
+==> Test
+Epoch 120: mAP: 99.0823%  R-1 : 100.0000%  R-5 : 100.0000%  R-10: 100.0000%  
+Epoch 120: mAP: 60.9935%  R-1 : 63.1950%  R-5 : 68.4448%  R-10: 70.3076%  
+==> Best mAP 99.1660%, achieved at epoch 85
+==> Best Rank-1 100.0000%, achieved at epoch 25
+==> Best mAP_2 61.6293%, achieved at epoch 115
+==> Best Rank-1_2 64.2676%, achieved at epoch 115
+Finished. Total elapsed time (h:m:s): 3:10:58. Training time (h:m:s): 2:35:44.
